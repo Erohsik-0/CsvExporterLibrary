@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PackageId>CsvExporterPkg</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Kishore</Authors>
+		<Company>Kishore</Company>
+		<Description>Reusable Csv export library using ClosedXML and Newtonsoft.Json, performance upgrade using cache and data range insert and implemented grouped sheets for cleaner view.</Description>
+		<PackageOutputPath>.\nupkg</PackageOutputPath>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+		<!-- NuGet-specific metadata -->
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+
+	<!-- Include README and LICENSE in the package -->
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="" />
+		<None Include="LICENSE.txt" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+</Project>
+
